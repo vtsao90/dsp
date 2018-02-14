@@ -20,14 +20,28 @@ Here's a list of items with which you should be familiar:
 
 Make a cheat sheet for yourself: a list of at least **ten** commands and what they do.  (Use the 8 items above and add a couple of your own.)  
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+>> 
+
+pwd : show current working directory path
+mkdir [dir] : create a directory
+rmdir [dir] : remove an empty directory
+rm -R [dir] : remove a non-empty directory and its files
+rm [file] : delete a file
+mv [file] [new filename] : rename a file
+mv -v [file] [directory] : move a file to a new directory
+ls -a : list files including hidden files
+cp [file] [dir] : copy a file to the listed directory
+cd [dir] : change directory
+cd ~ : home directory
+cd .. : move one level up 
+man [command] : display manual page for command
 
 ---
 
 ### Q2.  List Files in Unix   
 
 What do the following commands do:  
-`ls`  
+`ls 
 `ls -a`  
 `ls -l`  
 `ls -lh`  
@@ -35,7 +49,15 @@ What do the following commands do:
 `ls -t`  
 `ls -Glp`  
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> > 
+
+ls : list files in directory
+ls -a : list files including hidden files (start with '.')
+ls -l : list files in long format
+ls -lh : list files with sizes w/ suffixes (Bytes, KB, GB, etc.)
+ls -lah : list files including hidden files in the long format with sizes listed w/ suffixes (Bytes, KB, GB, etc.)
+ls -t : list files sorted by time modified (newest first)
+ls -Glp : list files in a long format with color enabled and directories demarcated with a '/' at the end of their names
 
 ---
 
@@ -43,15 +65,22 @@ What do the following commands do:
 
 Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) and pick 5 of your favorites:
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> > 
 
+1. ls -lu : long form display of files by access time
+2. ls -S : sort files by size
+3. ls -ks : list files and file sizes in kilobytes
+4. ls -i : list file serial numbers
+5. ls -d : list only directories
+
+:pufferfish:
 ---
 
 ### Q4.  Xargs   
 
 What does `xargs` do? Give an example of how to use it.
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> >  `xargs` supports building an execution pipeline from standard input
 
  
 
