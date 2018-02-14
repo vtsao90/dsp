@@ -20,21 +20,19 @@ Here's a list of items with which you should be familiar:
 
 Make a cheat sheet for yourself: a list of at least **ten** commands and what they do.  (Use the 8 items above and add a couple of your own.)  
 
->> 
-
-pwd : show current working directory path
-mkdir [dir] : create a directory
-rmdir [dir] : remove an empty directory
-rm -R [dir] : remove a non-empty directory and its files
-rm [file] : delete a file
-mv [file] [new filename] : rename a file
-mv -v [file] [directory] : move a file to a new directory
-ls -a : list files including hidden files
-cp [file] [dir] : copy a file to the listed directory
-cd [dir] : change directory
-cd ~ : home directory
-cd .. : move one level up 
-man [command] : display manual page for command
+> > * pwd : show current working directory path
+   * mkdir [dir] : create a directory
+   * rmdir [dir] : remove an empty directory
+   * rm -R [dir] : remove a non-empty directory and its files
+   * rm [file] : delete a file
+   * mv [file] [new filename] : rename a file
+   * mv -v [file] [directory] : move a file to a new directory
+   * ls -a : list files including hidden files
+   * cp [file] [dir] : copy a file to the listed directory
+   * cd [dir] : change directory
+   * cd ~ : home directory
+   * cd .. : move one level up 
+   * man [command] : display manual page for command
 
 ---
 
@@ -49,7 +47,7 @@ What do the following commands do:
 `ls -t`  
 `ls -Glp`  
 
-> > 
+>> 
 
 ls : list files in directory
 ls -a : list files including hidden files (start with '.')
