@@ -47,15 +47,13 @@ What do the following commands do:
 `ls -t`  
 `ls -Glp`  
 
->> 
-
-ls : list files in directory
-ls -a : list files including hidden files (start with '.')
-ls -l : list files in long format
-ls -lh : list files with sizes w/ suffixes (Bytes, KB, GB, etc.)
-ls -lah : list files including hidden files in the long format with sizes listed w/ suffixes (Bytes, KB, GB, etc.)
-ls -t : list files sorted by time modified (newest first)
-ls -Glp : list files in a long format with color enabled and directories demarcated with a '/' at the end of their names
+> > * ls : list files in directory
+    * ls -a : list files including hidden files (start with '.')
+    * ls -l : list files in long format
+    * ls -lh : list files with sizes w/ suffixes (Bytes, KB, GB, etc.)
+    * ls -lah : list files including hidden files in the long format with sizes listed w/ suffixes (Bytes, KB, GB, etc.)
+    * ls -t : list files sorted by time modified (newest first)
+    * ls -Glp : list files in a long format with color enabled and directories demarcated with a '/' at the end of their names
 
 ---
 
@@ -63,15 +61,13 @@ ls -Glp : list files in a long format with color enabled and directories demarca
 
 Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) and pick 5 of your favorites:
 
-> > 
+> > 1. ls -lu : long form display of files by access time
+    2. ls -S : sort files by size
+    3. ls -ks : list files and file sizes in kilobytes
+    4. ls -i : list file serial numbers
+    5. ls -d : list only directories
 
-1. ls -lu : long form display of files by access time
-2. ls -S : sort files by size
-3. ls -ks : list files and file sizes in kilobytes
-4. ls -i : list file serial numbers
-5. ls -d : list only directories
-
-:pufferfish:
+> > :pufferfish:
 ---
 
 ### Q4.  Xargs   
