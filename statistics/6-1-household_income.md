@@ -4,7 +4,7 @@
 
 ```{python}
 #median
-median = cdf.Value(0.5) #
+median = cdf.Value(0.5)
 median 
 #mean
 mean = np.mean(sample)
