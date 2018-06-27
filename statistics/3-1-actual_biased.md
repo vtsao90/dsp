@@ -20,7 +20,7 @@ print('Biased PMF:', biased_pmf)
 
 plt.plot([0,1,2,3,4,5], actual_pmf, drawstyle = "steps-mid", label = "actual")
 plt.plot([0,1,2,3,4,5], biased_pmf, drawstyle = "steps-mid", label = "biased")
-plt.xlabel("Number of Kids")
+plt.xlabel("Number of Children")
 plt.ylabel("PMF")
 plt.legend()
 plt.show()
