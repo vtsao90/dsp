@@ -1,4 +1,4 @@
-# Markdown Parctice
+# Markdown Practice
 ## Contents
 [1) How to Add Line Breaks](#section-a)\
 [2) How to Format Text](#section-b)\
