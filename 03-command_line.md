@@ -67,7 +67,7 @@ Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) 
     4. ls -i : list file serial numbers
     5. ls -d : list only directories
 
-> > :pufferfish:
+:pufferfish:
 ---
 
 ### Q4.  Xargs   
