@@ -9,4 +9,32 @@ Write another function that simulates many games, stores the estimates of `lam`,
 Is this way of making an estimate biased?"
 
 ```{python}
+# Solution goes here
+import numpy as np
+
+def gameEstimate(lam):
+    t = 0
+    goals = 0
+    while t < 1:
+        time_between_goals = random.expovariate(lam)
+        t += time_between_goals
+        if t < 1:
+            goals += 1
+    return goals
+
+
+def manyGames(lam, iters):
+    goals = []
+    for _ in range(iters):
+        goal = gameEstimate(lam)
+        goals.append(goal)
+    
+    e2 = [(goal - lam)**2 for goal in goals]
+    RMSE = np.sqrt(np.mean(e2))
+    
+    errors = [goal - lam for goal in goals]
+    MeanError = np.mean(errors)
+    
+    print(RMSE, MeanError) 
 ```
+This is unbiased, as the mean error decreases with increased iterations.
