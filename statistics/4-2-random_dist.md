@@ -7,4 +7,49 @@ Generate 1000 numbers from `numpy.random.random` and plot their PMF.  What goes 
 Now plot the CDF. Is the distribution uniform?"
 
 ```{python}
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+
+values = np.random.random(1000)
+values.sort()
+hist = {}
+for value in values:
+    hist[value] = hist.get(value,0) + 1
+
+#PMF
+
+pmf = {}
+for k, v in hist.items():
+    pmf[k] = v/len(hist)
+    
+pmf_sort = sorted(pmf.items())
+x,y = zip(*pmf_sort)
+
+plt.stem(x,y)
+plt.show()
+#Too much noise... 
+
+#CDF
+
+def CDF(values):
+    values.sort()
+    count = 0
+    cdf = {}
+    while count <= len(values) - 2:
+        if values[count] != values[count + 1]:
+            count += 1
+            cdf[values[count - 1]] = count/len(values)
+        else:
+            count += 1
+    count += 1
+    cdf[values[count - 1]] = count/len(values)
+    return cdf
+
+cdf_vals = sorted(CDF(values).items())
+x,y = zip(*cdf_vals)
+
+plt.plot(x,y)
 ```
+
+Yes, the distribution is uniform.
